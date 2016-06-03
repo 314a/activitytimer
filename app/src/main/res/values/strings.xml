@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Activity Timer</string>
+    <string name="add_log">Add activity log</string>
+    <string name="create_log">Create a new activity log</string>
+    <string name="select_activity">Select activity</string>
+    <string name="start_activity">Start</string>
+    <string name="stop_activity">Stop</string>
+    <string name="save_log">Save log</string>
+    <string name="send_log">Send log</string>
+    <string name="send_to">Send to</string>
+    <string name="clear_log">Clear log</string>
+    <string name="view_log">Activity log</string>
+    <string name="name_log">Name log</string>
+    <string name="activities_prompt">Activities</string>
+    <string name="msg_clear_log">Log cleared</string>
+    <string name="msg_saved_log">Log saved</string>
+    <string-array name="activities_array">
+        <item>Still</item>
+        <item>Sit</item>
+        <item>Stand up</item>
+        <item>Sit down</item>
+        <item>Walk</item>
+        <item>Run</item>
+        <item>Cycle</item>
+        <item>Go upstairs</item>
+        <item>Go downstairs</item>
+    </string-array>
+</resources>

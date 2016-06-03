@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="moasis.activitytimer.ProtocolActivity"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_log" />
+    <EditText android:id="@+id/nameLog"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_log" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_activity" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activitySpinner"
+        android:layout_gravity="center_horizontal"
+        android:entries="@array/activities_array"
+        android:prompt="@string/activities_prompt"
+        android:layout_weight="0.09" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_activity"
+            android:id="@+id/startButton"
+            android:onClick="start"
+            android:layout_weight="0.78" />
+        <Button
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_activity"
+            android:id="@+id/stopButton"
+            android:onClick="stop" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_log" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/logView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.86" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_log"
+            android:id="@+id/clearLog"
+            android:onClick="clearLog" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_log"
+            android:id="@+id/saveButton"
+            android:onClick="saveLog" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_log"
+            android:id="@+id/sendButton"
+            android:onClick="sendLog"  />
+
+    </LinearLayout>
+
+</LinearLayout>
